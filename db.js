@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 // define connection url for mongodb
-const mongoURL = "mongodb://127.0.0.1:27017/hotels"; //replace after this '/' such as  hotels to dtabase name
+// const mongoURL = process.env.MONGODB_URL_LOCAL; //replace after this '/' such as  hotels to dtabase name
+ const mongoURL = process.env.MONGODB_URl;
 
 mongoose.connect(mongoURL);
 
