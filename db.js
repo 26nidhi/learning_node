@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 // define connection url for mongodb
-// const mongoURL = process.env.MONGODB_URL_LOCAL; //replace after this '/' such as  hotels to dtabase name
- const mongoURL = process.env.MONGODB_URl;
+ const mongoURL = process.env.MONGODB_URL_LOCAL; //replace after this '/' such as  hotels to dtabase name
+ //const mongoURL = process.env.MONGODB_URL;
 
 mongoose.connect(mongoURL);
 
